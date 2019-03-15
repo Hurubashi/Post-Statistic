@@ -40,9 +40,7 @@
                                                 <rect key="frame" x="0.0" y="45" width="394" height="150"/>
                                                 <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="150" id="ydo-Wr-pRS">
-                                                        <variation key="heightClass=compact-widthClass=regular" constant="130"/>
-                                                    </constraint>
+                                                    <constraint firstAttribute="height" constant="150" id="ydo-Wr-pRS"/>
                                                 </constraints>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
