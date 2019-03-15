@@ -24,13 +24,16 @@ class PostStatisticVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         fillTextLabels()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        
         service.requestBasicInfo(withId: id) { [weak self] basicInfo in
             
             self?.statistic.basicInfo = basicInfo
             self?.fillTextLabels()
-  
+            
             self?.loadLikers()
             self?.loadCommentators()
             self?.loadMentioned()
