@@ -10,11 +10,14 @@ import UIKit
 
 class OneLineStatisticView: UIView {
     
+    // Outlets
     @IBOutlet weak var statsticName: UILabel!
     
+    // Variables userd to load view from nib
     private var view    : UIView!
     private var nibName : String    = "OneLineStatisticView"
     
+    // MARK : - Loading from nib functions
     override init(frame: CGRect) {
         super.init(frame: frame)
         setup()

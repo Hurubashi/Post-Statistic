@@ -29,6 +29,7 @@ class PostStatisticVC: UIViewController {
         service.requestBasicInfo(withId: id) { [weak self] basicInfo in
             
             self?.statistic.basicInfo = basicInfo
+            self?.fillTextLabels()
   
             self?.loadLikers()
             self?.loadCommentators()
@@ -51,6 +52,7 @@ class PostStatisticVC: UIViewController {
         usersCollectionView[2].oneLineStatisticView.statsticName.text = "Отметки" + " " + "\(statistic.basicInfo.marks)"
     }
     
+    // MARK: Loading users by category to all user list and concret category id list
     func loadLikers() {
         group.enter()
         service.requestUsers(with: .likers(id)){ [weak self] result in
@@ -75,29 +77,32 @@ class PostStatisticVC: UIViewController {
         }
     }
     
+    // MARK: - User Images loading and setup
     func loadUserImages() {
         
-        let gg = statistic.users.count
-        var i = 0
+        let totalUserCount = statistic.users.count
+        var iterator = 0
         for user in statistic.users {
-            service.requestForImageData(urlString: user.imgUrl) { data in
-                self.statistic.users[i].imgData = data
-                i += 1
-                if i == gg {
-                    self.usersCollectionView[0].users = self.statistic.getUsers(ofCategory: .likers)
-                    self.usersCollectionView[0].collectionView.reloadData()
-                    
-                    self.usersCollectionView[1].users = self.statistic.getUsers(ofCategory: .commentators)
-                    self.usersCollectionView[1].collectionView.reloadData()
-                    
-                    self.usersCollectionView[2].users = self.statistic.getUsers(ofCategory: .mentioned)
-                    self.usersCollectionView[2].collectionView.reloadData()
-                    
-                    self.fillTextLabels()
+            service.requestForImageData(urlString: user.imgUrl) { [weak self] data in
+                self?.statistic.users[iterator].imgData = data
+                iterator += 1
+                if iterator == totalUserCount {
+                    self?.realodUserImages()
                 }
             }
         }
 
+    }
+    
+    func realodUserImages() {
+        usersCollectionView[0].users = self.statistic.getUsers(ofCategory: .likers)
+        usersCollectionView[0].collectionView.reloadData()
+        
+        usersCollectionView[1].users = self.statistic.getUsers(ofCategory: .commentators)
+        usersCollectionView[1].collectionView.reloadData()
+        
+        usersCollectionView[2].users = self.statistic.getUsers(ofCategory: .mentioned)
+        usersCollectionView[2].collectionView.reloadData()
     }
 
 }

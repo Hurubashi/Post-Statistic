@@ -21,16 +21,16 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o8M-PO-M2i">
-                    <rect key="frame" x="184" y="63" width="42" height="21"/>
+                    <rect key="frame" x="15" y="63" width="42" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="o8M-PO-M2i" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="63a-vS-tCV"/>
-                <constraint firstItem="o8M-PO-M2i" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="lWJ-Vq-J54"/>
+                <constraint firstItem="o8M-PO-M2i" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="8xz-Ek-lph"/>
+                <constraint firstItem="o8M-PO-M2i" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="ok7-Vb-Tgd"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>

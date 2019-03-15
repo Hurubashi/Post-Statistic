@@ -10,13 +10,18 @@ import UIKit
 
 class UsersHorizontalCollectionView: UIView {
     
-    private var view    : UIView!
-    private var nibName : String    = "UsersHorizontalCollectionView"
-    var users           : [User]    = []
-    
+    // Outlets
     @IBOutlet weak var oneLineStatisticView: OneLineStatisticView!
     @IBOutlet weak var collectionView: UICollectionView!
     
+    // Variables userd to load view from nib
+    private var view    : UIView!
+    private var nibName : String    = "UsersHorizontalCollectionView"
+    
+    // Variables with data
+    var users           : [User]    = []
+    
+    // MARK : - Loading from nib functions
     override init(frame: CGRect) {
         super.init(frame: frame)
         setup()
@@ -39,11 +44,9 @@ class UsersHorizontalCollectionView: UIView {
         addSubview(view)
     }
     
-    func set(users: [User]) {
-        
-    }
 }
 
+// MARK: - CollectionView DataSource
 extension UsersHorizontalCollectionView: UICollectionViewDataSource {
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

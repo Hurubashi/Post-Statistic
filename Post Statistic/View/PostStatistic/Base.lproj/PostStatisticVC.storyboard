@@ -22,54 +22,84 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nnN-1o-Q6c" userLabel="ContentView">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="665"/>
+                                        <rect key="frame" x="10" y="0.0" width="394" height="575"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ejg-q8-VeQ" customClass="OneLineStatisticView" customModule="Post_Statistic" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="10" width="414" height="60"/>
+                                                <rect key="frame" x="0.0" y="10" width="394" height="30"/>
                                                 <color key="backgroundColor" red="0.56328815219999995" green="0.73554140329999995" blue="0.85194617510000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="60" id="Fdn-s5-NCM"/>
+                                                    <constraint firstAttribute="height" constant="30" id="Fdn-s5-NCM"/>
                                                 </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JS0-Y5-dyh" customClass="UsersHorizontalCollectionView" customModule="Post_Statistic" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="75" width="414" height="150"/>
+                                                <rect key="frame" x="0.0" y="45" width="394" height="150"/>
                                                 <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="150" id="ydo-Wr-pRS">
                                                         <variation key="heightClass=compact-widthClass=regular" constant="130"/>
                                                     </constraint>
                                                 </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WsN-Oe-ndr" customClass="UsersHorizontalCollectionView" customModule="Post_Statistic" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="230" width="414" height="150"/>
+                                                <rect key="frame" x="0.0" y="200" width="394" height="150"/>
                                                 <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="150" id="0ys-5l-be4"/>
                                                 </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bBE-1j-5tw" customClass="UsersHorizontalCollectionView" customModule="Post_Statistic" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="385" width="414" height="150"/>
+                                                <rect key="frame" x="0.0" y="355" width="394" height="150"/>
                                                 <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="150" id="dge-T1-cxS"/>
                                                 </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PkA-i0-Mok" customClass="OneLineStatisticView" customModule="Post_Statistic" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="540" width="414" height="60"/>
+                                                <rect key="frame" x="0.0" y="510" width="394" height="30"/>
                                                 <color key="backgroundColor" red="0.56328815219999995" green="0.73554140329999995" blue="0.85194617510000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="60" id="fgA-cj-BkQ"/>
+                                                    <constraint firstAttribute="height" constant="30" id="fgA-cj-BkQ"/>
                                                 </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0MK-DJ-fIV" customClass="OneLineStatisticView" customModule="Post_Statistic" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="605" width="414" height="60"/>
+                                                <rect key="frame" x="0.0" y="545" width="394" height="30"/>
                                                 <color key="backgroundColor" red="0.56328815219999995" green="0.73554140329999995" blue="0.85194617510000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="60" id="wqC-e2-8JT"/>
+                                                    <constraint firstAttribute="height" constant="30" id="wqC-e2-8JT"/>
                                                 </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                             </view>
                                         </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="WsN-Oe-ndr" firstAttribute="top" secondItem="JS0-Y5-dyh" secondAttribute="bottom" constant="5" id="387-Gb-vpp"/>
                                             <constraint firstAttribute="trailing" secondItem="PkA-i0-Mok" secondAttribute="trailing" id="3PU-cZ-5IM"/>
@@ -94,16 +124,16 @@
                                     </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="nnN-1o-Q6c" firstAttribute="width" secondItem="OmH-Wj-uH2" secondAttribute="width" id="8zp-fw-FM7"/>
+                                    <constraint firstItem="nnN-1o-Q6c" firstAttribute="width" secondItem="OmH-Wj-uH2" secondAttribute="width" constant="-20" id="8zp-fw-FM7"/>
                                     <constraint firstItem="nnN-1o-Q6c" firstAttribute="top" secondItem="OmH-Wj-uH2" secondAttribute="top" id="BXW-Cu-wL2"/>
-                                    <constraint firstAttribute="trailing" secondItem="nnN-1o-Q6c" secondAttribute="trailing" id="GNt-42-2HQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="nnN-1o-Q6c" secondAttribute="trailing" constant="10" id="GNt-42-2HQ"/>
                                     <constraint firstItem="nnN-1o-Q6c" firstAttribute="height" secondItem="OmH-Wj-uH2" secondAttribute="height" priority="250" id="JBC-Yn-REE"/>
                                     <constraint firstAttribute="bottom" secondItem="nnN-1o-Q6c" secondAttribute="bottom" id="isv-oP-39A"/>
-                                    <constraint firstItem="nnN-1o-Q6c" firstAttribute="leading" secondItem="OmH-Wj-uH2" secondAttribute="leading" id="scg-8L-cOn"/>
+                                    <constraint firstItem="nnN-1o-Q6c" firstAttribute="leading" secondItem="OmH-Wj-uH2" secondAttribute="leading" constant="10" id="scg-8L-cOn"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="OmH-Wj-uH2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Bfj-FQ-uQC"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OmH-Wj-uH2" secondAttribute="trailing" id="HzS-BZ-rIo"/>
