@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Post StatisticVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="PostStatisticVC" customModule="Post_Statistic" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OmH-Wj-uH2">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nnN-1o-Q6c" userLabel="ContentView">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="665"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ejg-q8-VeQ" customClass="OneLineStatisticView" customModule="Post_Statistic" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="10" width="414" height="60"/>
+                                                <color key="backgroundColor" red="0.56328815219999995" green="0.73554140329999995" blue="0.85194617510000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="Fdn-s5-NCM"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JS0-Y5-dyh" customClass="UsersHorizontalCollectionView" customModule="Post_Statistic" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="75" width="414" height="150"/>
+                                                <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="150" id="ydo-Wr-pRS">
+                                                        <variation key="heightClass=compact-widthClass=regular" constant="130"/>
+                                                    </constraint>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WsN-Oe-ndr" customClass="UsersHorizontalCollectionView" customModule="Post_Statistic" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="230" width="414" height="150"/>
+                                                <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="150" id="0ys-5l-be4"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bBE-1j-5tw" customClass="UsersHorizontalCollectionView" customModule="Post_Statistic" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="385" width="414" height="150"/>
+                                                <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="150" id="dge-T1-cxS"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PkA-i0-Mok" customClass="OneLineStatisticView" customModule="Post_Statistic" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="540" width="414" height="60"/>
+                                                <color key="backgroundColor" red="0.56328815219999995" green="0.73554140329999995" blue="0.85194617510000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="fgA-cj-BkQ"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0MK-DJ-fIV" customClass="OneLineStatisticView" customModule="Post_Statistic" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="605" width="414" height="60"/>
+                                                <color key="backgroundColor" red="0.56328815219999995" green="0.73554140329999995" blue="0.85194617510000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="wqC-e2-8JT"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="WsN-Oe-ndr" firstAttribute="top" secondItem="JS0-Y5-dyh" secondAttribute="bottom" constant="5" id="387-Gb-vpp"/>
+                                            <constraint firstAttribute="trailing" secondItem="PkA-i0-Mok" secondAttribute="trailing" id="3PU-cZ-5IM"/>
+                                            <constraint firstItem="bBE-1j-5tw" firstAttribute="leading" secondItem="nnN-1o-Q6c" secondAttribute="leading" id="9p3-9b-hTb"/>
+                                            <constraint firstItem="0MK-DJ-fIV" firstAttribute="top" secondItem="PkA-i0-Mok" secondAttribute="bottom" constant="5" id="GVt-JY-emw"/>
+                                            <constraint firstAttribute="trailing" secondItem="WsN-Oe-ndr" secondAttribute="trailing" id="HVv-YU-gsr"/>
+                                            <constraint firstItem="JS0-Y5-dyh" firstAttribute="top" secondItem="ejg-q8-VeQ" secondAttribute="bottom" constant="5" id="Pae-eV-ylK"/>
+                                            <constraint firstAttribute="trailing" secondItem="0MK-DJ-fIV" secondAttribute="trailing" id="Pdg-NJ-o4m"/>
+                                            <constraint firstItem="WsN-Oe-ndr" firstAttribute="leading" secondItem="nnN-1o-Q6c" secondAttribute="leading" id="Qyc-pH-0Xc"/>
+                                            <constraint firstItem="ejg-q8-VeQ" firstAttribute="top" secondItem="nnN-1o-Q6c" secondAttribute="top" constant="10" id="TZb-MO-QRf"/>
+                                            <constraint firstAttribute="trailing" secondItem="ejg-q8-VeQ" secondAttribute="trailing" id="cY6-zJ-cnd"/>
+                                            <constraint firstItem="ejg-q8-VeQ" firstAttribute="leading" secondItem="nnN-1o-Q6c" secondAttribute="leading" id="fQf-3o-beG"/>
+                                            <constraint firstItem="PkA-i0-Mok" firstAttribute="leading" secondItem="nnN-1o-Q6c" secondAttribute="leading" id="j44-oD-FUx"/>
+                                            <constraint firstItem="bBE-1j-5tw" firstAttribute="top" secondItem="WsN-Oe-ndr" secondAttribute="bottom" constant="5" id="miv-rU-Z5z"/>
+                                            <constraint firstItem="PkA-i0-Mok" firstAttribute="top" secondItem="bBE-1j-5tw" secondAttribute="bottom" constant="5" id="oeZ-5R-5Kd"/>
+                                            <constraint firstAttribute="bottom" secondItem="0MK-DJ-fIV" secondAttribute="bottom" id="wBI-ce-PNc"/>
+                                            <constraint firstItem="0MK-DJ-fIV" firstAttribute="leading" secondItem="nnN-1o-Q6c" secondAttribute="leading" id="xlM-yL-JrC"/>
+                                            <constraint firstItem="JS0-Y5-dyh" firstAttribute="leading" secondItem="nnN-1o-Q6c" secondAttribute="leading" id="y0n-IQ-Wcm"/>
+                                            <constraint firstAttribute="trailing" secondItem="JS0-Y5-dyh" secondAttribute="trailing" id="yks-IV-A6p"/>
+                                            <constraint firstAttribute="trailing" secondItem="bBE-1j-5tw" secondAttribute="trailing" id="zi7-eC-E6h"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="nnN-1o-Q6c" firstAttribute="width" secondItem="OmH-Wj-uH2" secondAttribute="width" id="8zp-fw-FM7"/>
+                                    <constraint firstItem="nnN-1o-Q6c" firstAttribute="top" secondItem="OmH-Wj-uH2" secondAttribute="top" id="BXW-Cu-wL2"/>
+                                    <constraint firstAttribute="trailing" secondItem="nnN-1o-Q6c" secondAttribute="trailing" id="GNt-42-2HQ"/>
+                                    <constraint firstItem="nnN-1o-Q6c" firstAttribute="height" secondItem="OmH-Wj-uH2" secondAttribute="height" priority="250" id="JBC-Yn-REE"/>
+                                    <constraint firstAttribute="bottom" secondItem="nnN-1o-Q6c" secondAttribute="bottom" id="isv-oP-39A"/>
+                                    <constraint firstItem="nnN-1o-Q6c" firstAttribute="leading" secondItem="OmH-Wj-uH2" secondAttribute="leading" id="scg-8L-cOn"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="OmH-Wj-uH2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Bfj-FQ-uQC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OmH-Wj-uH2" secondAttribute="trailing" id="HzS-BZ-rIo"/>
+                            <constraint firstItem="OmH-Wj-uH2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="fjL-N4-kTY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="OmH-Wj-uH2" secondAttribute="bottom" id="ipp-px-3JY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outletCollection property="oneLineStatisticView" destination="ejg-q8-VeQ" collectionClass="NSMutableArray" id="Fnw-1z-oz6"/>
+                        <outletCollection property="oneLineStatisticView" destination="PkA-i0-Mok" collectionClass="NSMutableArray" id="Xq2-ji-1hZ"/>
+                        <outletCollection property="oneLineStatisticView" destination="0MK-DJ-fIV" collectionClass="NSMutableArray" id="5DB-AH-T3X"/>
+                        <outletCollection property="usersCollectionView" destination="JS0-Y5-dyh" collectionClass="NSMutableArray" id="DbO-hV-Zi5"/>
+                        <outletCollection property="usersCollectionView" destination="WsN-Oe-ndr" collectionClass="NSMutableArray" id="i5Y-VS-tD8"/>
+                        <outletCollection property="usersCollectionView" destination="bBE-1j-5tw" collectionClass="NSMutableArray" id="IJl-3o-0fz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1932" y="26.53673163418291"/>
+        </scene>
+    </scenes>
+</document>
